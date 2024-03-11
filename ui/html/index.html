@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word and Letter Counter</title>
+    <link rel="stylesheet" href="/ui/css/style.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Word and Letter Counter</h1>
+        <form method="post">
+            <textarea name="inputText" rows="5" cols="30">{{.Text}}</textarea><br>
+            <input type="submit" value="Count">
+        </form>
+        {{if .Results}}
+        <div id="result">
+            <p>Words: {{.Words}}</p>
+            <p>Letters: {{.Letters}}</p>
+        </div>
+        {{end}}
+    </div>
+</body>
+</html>
